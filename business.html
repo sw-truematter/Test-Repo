@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Business Banking - First Community Bankers</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+  <!-- Navigation (same as homepage) -->
+  <header class="navigation">
+    <div class="nav-logo">
+      <h1>First Community Bankers</h1>
+      <p>FDIC Insured</p>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#">Bank</a></li>
+        <li><a href="#">Borrow</a></li>
+        <li><a href="#">Plan</a></li>
+        <li><a href="#">Small Business Banking</a></li>
+        <li><a href="#">Mortgages</a></li>
+        <li><a href="#">Find a Branch</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#" class="nav-icon"><i class="fas fa-bars"></i></a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Banner -->
+  <section class="hero">
+    <h2>Flexible Banking Solutions for Business</h2>
+    <div class="cta-buttons">
+      <button>Find Banking Products</button>
+      <button>Find a Banker</button>
+    </div>
+  </section>
+
+  <!-- Top Products -->
+  <section class="products">
+    <h3>Top Business Products</h3>
+    <div class="card-grid">
+      <div class="card">Business Checking <button>Learn More</button></div>
+      <div class="card">Business Savings <button>Learn More</button></div>
+      <div class="card">Small Business Loans <button>Learn More</button></div>
+      <div class="card">Merchant Services <button>Learn More</button></div>
+      <div class="card">Payroll Services <button>Learn More</button></div>
+      <div class="card">Business Credit Cards <button>Learn More</button></div>
+    </div>
+    <p><a href="#">View All Products</a></p>
+  </section>
+
+  <!-- Schedule Appointment Banner -->
+  <section class="large-banner">
+    <h3>Questions? Ask a Banker</h3>
+    <button>Schedule an Appointment</button>
+  </section>
+
+  <!-- All Products -->
+  <section class="all-products">
+    <h3>All Products</h3>
+    <div class="full-width-card">
+      <h4>Bank</h4>
+      <ul>
+        <li><a href="#">Checking</a></li>
+        <li><a href="#">Savings</a></li>
+      </ul>
+    </div>
+    <div class="full-width-card">
+      <h4>Borrow</h4>
+      <ul>
+        <li><a href="#">Business Loans</a></li>
+        <li><a href="#">Lines of Credit</a></li>
+      </ul>
+    </div>
+    <div class="full-width-card">
+      <h4>Plan</h4>
+      <ul>
+        <li><a href="#">Retirement Accounts</a></li>
+        <li><a href="#">Business Insurance</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Financial Advisors Banner -->
+  <section class="medium-banner">
+    <h3>Meet Our Financial Advisors</h3>
+    <button>Connect Now</button>
+  </section>
+
+  <!-- Technology -->
+  <section class="technology">
+    <h3>Technology</h3>
+    <div class="card-grid">
+      <div class="card">Online Banking <button>Try It</button></div>
+      <div class="card">Mobile Deposit <button>Learn More</button></div>
+      <div class="card">Bill Pay <button>Start Using</button></div>
+      <div class="card">Cash Flow Tools <button>Explore</button></div>
+    </div>
+  </section>
+
+  <!-- FAQs -->
+  <section class="faqs">
+    <h3>FAQs</h3>
+    <div class="accordion">
+      <div class="accordion-item">
+        <button class="accordion-header">How do I open a business account?</button>
+        <div class="accordion-body">You can start online or visit any branch.</div>
+      </div>
+      <div class="accordion-item">
+        <button class="accordion-header">What documents are needed?</button>
+        <div class="accordion-body">Typically, your business license, EIN, and personal ID.</div>
+      </div>
+      <div class="accordion-item">
+        <button class="accordion-header">Are there account fees?</button>
+        <div class="accordion-body">Some accounts have minimum balance requirements to waive fees.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Final Banner -->
+  <section class="large-banner">
+    <h3>Need Guidance?</h3>
+    <button>Find a Banker</button>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2025 First Community Bankers. All rights reserved.</p>
+  </footer>
+
+  <script>
+    $(document).ready(function(){
+      $('.accordion-header').click(function(){
+        $(this).next('.accordion-body').slideToggle();
+        $('.accordion-body').not($(this).next()).slideUp();
+      });
+    });
+  </script>
+</body>
+</html>
