@@ -273,3 +273,154 @@ nav ul li a:hover {
 .footer a:hover {
   text-decoration: underline;
 }
+
+/* Hero Banner */
+.hero-banner {
+  background-color: #e0f2fe;
+  padding: 60px 20px;
+  text-align: center;
+  border-radius: 12px;
+  margin-bottom: 40px;
+}
+
+.hero-banner h1 {
+  font-size: 2.5rem;
+  color: #1e3a8a;
+  margin-bottom: 20px;
+}
+
+.hero-banner .cta-button {
+  background-color: #1e3a8a;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 999px;
+  margin: 10px;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.hero-banner .cta-button:hover {
+  background-color: #1d4ed8;
+}
+
+/* Product Cards */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.card {
+  background-color: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  transition: box-shadow 0.3s ease;
+}
+
+.card:hover {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.card h3 {
+  font-size: 1.25rem;
+  color: #1e3a8a;
+  margin-bottom: 10px;
+}
+
+.card a {
+  display: inline-block;
+  margin-top: 10px;
+  color: #2563eb;
+  text-decoration: none;
+}
+
+.card a:hover {
+  text-decoration: underline;
+}
+
+/* Section Banner */
+.section-banner {
+  background-color: #f0f9ff;
+  padding: 40px 20px;
+  text-align: center;
+  border-radius: 12px;
+  margin: 40px 0;
+}
+
+.section-banner h2 {
+  font-size: 2rem;
+  margin-bottom: 16px;
+  color: #1e3a8a;
+}
+
+.section-banner .cta-button {
+  background-color: #1e3a8a;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 999px;
+  text-decoration: none;
+}
+
+.section-banner .cta-button:hover {
+  background-color: #1d4ed8;
+}
+
+/* Full-Width Product Category Cards */
+.full-width-card {
+  background-color: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  margin-bottom: 20px;
+}
+
+.full-width-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #1e3a8a;
+}
+
+.full-width-card ul {
+  list-style: none;
+  padding: 0;
+}
+
+.full-width-card li {
+  margin-bottom: 6px;
+}
+
+/* FAQs Accordion */
+.accordion {
+  margin: 20px 0;
+}
+
+.accordion-item {
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.accordion-item h4 {
+  margin: 0;
+  padding: 16px;
+  cursor: pointer;
+  background-color: #f9fafb;
+  color: #1e3a8a;
+  font-size: 1rem;
+}
+
+.accordion-content {
+  display: none;
+  padding: 0 16px 16px;
+  background-color: #fff;
+}
+
+.accordion-item.active .accordion-content {
+  display: block;
+}
+
+/* Utility */
+.text-center {
+  text-align: center;
+}
+
