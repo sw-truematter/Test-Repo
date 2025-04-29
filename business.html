@@ -185,5 +185,33 @@
       });
     });
   </script>
+
+  <script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const accordionItems = document.querySelectorAll('.bb-accordion-item');
+
+    accordionItems.forEach((item) => {
+      const header = item.querySelector('h4');
+      const content = item.querySelector('.bb-accordion-content');
+
+      // Initially hide content
+      content.style.display = 'none';
+
+      header.style.cursor = 'pointer';
+      header.addEventListener('click', () => {
+        const isOpen = content.style.display === 'block';
+        
+        // Close all items
+        accordionItems.forEach((otherItem) => {
+          otherItem.querySelector('.bb-accordion-content').style.display = 'none';
+        });
+
+        // Toggle current item
+        content.style.display = isOpen ? 'none' : 'block';
+      });
+    });
+  });
+</script>
+
 </body>
 </html>
